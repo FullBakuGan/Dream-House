@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Dream_House.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class migr : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -141,29 +141,29 @@ namespace Dream_House.Migrations
                 comment: "Хранит типы объектов недвижимости (например, аренда, продажа)");
 
             migrationBuilder.CreateTable(
-                name: "user",
+                name: "users",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false, comment: "Уникальный идентификатор пользователя (автоинкремент)")
+                    id = table.Column<int>(type: "integer", nullable: false, comment: "Уникальный идентификатор пользователя (автоинкремент)")
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false, comment: "Имя пользователя"),
-                    Surname = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false, comment: "Фамилия пользователя"),
-                    DateOfBirth = table.Column<DateTime>(type: "date", nullable: false, comment: "Дата рождения пользователя"),
-                    Email = table.Column<string>(type: "character varying(255)", maxLength: 255, nullable: false, comment: "Email пользователя, используется для входа"),
-                    PhoneNumber = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false, comment: "Номер телефона пользователя"),
-                    HashPassword = table.Column<string>(type: "character varying(255)", maxLength: 255, nullable: false, comment: "Хэшированный пароль пользователя"),
-                    RoleId = table.Column<int>(type: "integer", nullable: false, comment: "Ссылка на роль пользователя (таблица role)"),
+                    name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false, comment: "Имя пользователя"),
+                    surname = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false, comment: "Фамилия пользователя"),
+                    date_of_birth = table.Column<DateTime>(type: "timestamp with time zone", nullable: false, comment: "Дата рождения пользователя"),
+                    email = table.Column<string>(type: "character varying(255)", maxLength: 255, nullable: false, comment: "Email пользователя, используется для входа"),
+                    phone_number = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false, comment: "Номер телефона пользователя"),
+                    hash_password = table.Column<string>(type: "character varying(255)", maxLength: 255, nullable: false, comment: "Хэшированный пароль пользователя"),
+                    role_id = table.Column<int>(type: "integer", nullable: false, comment: "Ссылка на роль пользователя (таблица role)"),
                     RegistrationDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: false, defaultValueSql: "CURRENT_TIMESTAMP", comment: "Дата регистрации пользователя")
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("user_pkey", x => x.Id);
+                    table.PrimaryKey("user_pkey", x => x.id);
                     table.ForeignKey(
-                        name: "FK_user_role_RoleId",
-                        column: x => x.RoleId,
+                        name: "fk_role",
+                        column: x => x.role_id,
                         principalTable: "role",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 },
                 comment: "Хранит информацию о зарегистрированных пользователях сервиса");
 
@@ -312,8 +312,8 @@ namespace Dream_House.Migrations
                     table.ForeignKey(
                         name: "fk_user",
                         column: x => x.id_user,
-                        principalTable: "user",
-                        principalColumn: "Id",
+                        principalTable: "users",
+                        principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
                 },
                 comment: "Хранит информацию об объявлениях, добавленных пользователями в избранное");
@@ -499,14 +499,14 @@ namespace Dream_House.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_user_RoleId",
-                table: "user",
-                column: "RoleId");
+                name: "IX_users_role_id",
+                table: "users",
+                column: "role_id");
 
             migrationBuilder.CreateIndex(
                 name: "unique_email",
-                table: "user",
-                column: "Email",
+                table: "users",
+                column: "email",
                 unique: true);
         }
 
@@ -529,7 +529,7 @@ namespace Dream_House.Migrations
                 name: "price_history");
 
             migrationBuilder.DropTable(
-                name: "user");
+                name: "users");
 
             migrationBuilder.DropTable(
                 name: "ad");

@@ -396,13 +396,10 @@ namespace Dream_House.Data
             modelBuilder.Entity<User>(entity =>
             {
                 entity.HasKey(e => e.Id).HasName("user_pkey");
-
-                entity.ToTable("user", tb => tb.HasComment("Хранит информацию о зарегистрированных пользователях сервиса"));
-
+                entity.ToTable("users", tb => tb.HasComment("Хранит информацию о зарегистрированных пользователях сервиса")); // Use "users" to match the model
                 entity.HasIndex(e => e.Email, "unique_email").IsUnique();
-
                 entity.Property(e => e.Id).HasComment("Уникальный идентификатор пользователя (автоинкремент)");
-                entity.Property(e => e.DateOfBirth).HasComment("Дата рождения пользователя");
+                entity.Property(e => e.DateOfBirth).HasColumnType("timestamp without time zone").HasComment("Дата рождения пользователя");
                 entity.Property(e => e.Email)
                     .HasMaxLength(255)
                     .HasComment("Email пользователя, используется для входа");
@@ -424,11 +421,11 @@ namespace Dream_House.Data
                     .HasMaxLength(100)
                     .HasComment("Фамилия пользователя");
 
-                //entity.HasOne(u => u.RoleId)           // Навигационное свойство
-                //.WithMany(r => r.Users)          // Коллекция в Role
-                //.HasForeignKey(u => u.RoleId)    // Внешний ключ
-                //.OnDelete(DeleteBehavior.Restrict)
-                //.HasConstraintName("fk_role");
+                entity.HasOne(u => u.Role) // Use the Role navigation property
+                    .WithMany(r => r.Users)
+                    .HasForeignKey(u => u.RoleId)
+                    .OnDelete(DeleteBehavior.Restrict)
+                    .HasConstraintName("fk_role");
             });
 
         }

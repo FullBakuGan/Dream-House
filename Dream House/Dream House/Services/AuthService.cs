@@ -27,27 +27,26 @@ namespace Dream_House.Services
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(model.Email) || string.IsNullOrWhiteSpace(model.Password))
-                    return false;
-
-                if (await _context.Users.AnyAsync(u => u.Email == model.Email))
-                    return false;
+                var userExists = await _context.Users.AnyAsync(u => u.Email == model.Email);
+                if (userExists)
+                {
+                    return false; // Пользователь с таким email уже существует
+                }
 
                 var user = new User
                 {
                     Name = model.Name,
                     Surname = model.Surname,
-                    DateOfBirth = model.DateOfBirth,
+                    DateOfBirth = DateTime.SpecifyKind(model.DateOfBirth, DateTimeKind.Unspecified), // Устанавливаем Kind=Unspecified
                     Email = model.Email,
                     PhoneNumber = model.PhoneNumber,
                     HashPassword = HashPassword(model.Password),
                     RoleId = model.RoleId,
-                    RegistrationDate = DateTime.Now
+                    RegistrationDate = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Unspecified) // Устанавливаем Kind=Unspecified
                 };
 
-                await _context.Users.AddAsync(user);
+                _context.Users.Add(user);
                 await _context.SaveChangesAsync();
-
                 return true;
             }
             catch (Exception ex)

@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Dream_House.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250627122347_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250627152553_dataе")]
+    partial class dataе
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -57,36 +57,40 @@ namespace Dream_House.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
+                        .HasColumnName("id")
                         .HasComment("Уникальный идентификатор пользователя (автоинкремент)");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("DateOfBirth")
-                        .HasColumnType("date")
+                        .HasColumnType("timestamp without time zone")
+                        .HasColumnName("date_of_birth")
                         .HasComment("Дата рождения пользователя");
 
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("character varying(255)")
+                        .HasColumnName("email")
                         .HasComment("Email пользователя, используется для входа");
 
                     b.Property<string>("HashPassword")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("character varying(255)")
+                        .HasColumnName("hash_password")
                         .HasComment("Хэшированный пароль пользователя");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("character varying(100)")
+                        .HasColumnName("name")
                         .HasComment("Имя пользователя");
 
                     b.Property<string>("PhoneNumber")
-                        .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("character varying(20)")
+                        .HasColumnName("phone_number")
                         .HasComment("Номер телефона пользователя");
 
                     b.Property<DateTime>("RegistrationDate")
@@ -97,12 +101,13 @@ namespace Dream_House.Migrations
 
                     b.Property<int>("RoleId")
                         .HasColumnType("integer")
+                        .HasColumnName("role_id")
                         .HasComment("Ссылка на роль пользователя (таблица role)");
 
                     b.Property<string>("Surname")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("character varying(100)")
+                        .HasColumnName("surname")
                         .HasComment("Фамилия пользователя");
 
                     b.HasKey("Id")
@@ -113,7 +118,7 @@ namespace Dream_House.Migrations
                     b.HasIndex(new[] { "Email" }, "unique_email")
                         .IsUnique();
 
-                    b.ToTable("user", null, t =>
+                    b.ToTable("users", null, t =>
                         {
                             t.HasComment("Хранит информацию о зарегистрированных пользователях сервиса");
                         });
@@ -644,11 +649,14 @@ namespace Dream_House.Migrations
 
             modelBuilder.Entity("Dream_House.Models.User", b =>
                 {
-                    b.HasOne("Dream_House.Models.Role", null)
+                    b.HasOne("Dream_House.Models.Role", "Role")
                         .WithMany("Users")
                         .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("fk_role");
+
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("hackaton_asp_project.Models.ad", b =>

@@ -76,27 +76,17 @@ namespace Dream_House.Controllers
         {
             ViewBag.Title = "Регистрация";
 
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return View(model);
-            }
-
-            try
-            {
+                model.DateOfBirth = DateTime.SpecifyKind(model.DateOfBirth, DateTimeKind.Unspecified); // Устанавливаем Kind=Unspecified
                 var result = await _authService.RegisterUserAsync(model);
-                if (!result)
+                if (result)
                 {
-                    ModelState.AddModelError("", "Ошибка регистрации. Возможно, email уже занят.");
-                    return View(model);
+                    return RedirectToAction("Index", "Home");
                 }
-
-                return RedirectToAction("Login", "Account");
+                ModelState.AddModelError("", "Ошибка регистрации. Пользователь с таким email уже существует.");
             }
-            catch
-            {
-                ModelState.AddModelError("", "Произошла ошибка при регистрации");
-                return View(model);
-            }
+            return View(model);
         }
     }
 }
