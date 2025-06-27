@@ -1,0 +1,198 @@
+﻿@model Dream_House.Models.RegisterViewModel
+
+@{
+        var pageTitle = ViewData?["Title"] as string ?? "Регистрация";
+        Layout = null;
+}
+
+<h2>@pageTitle</h2>
+
+<style>
+    :root {
+        --primary-color: #4361ee;
+        --secondary-color: #3f37c9;
+        --accent-color: #4895ef;
+        --text-color: #2b2d42;
+        --light-gray: #f8f9fa;
+        --border-radius: 12px;
+        --box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .registration-container {
+        background: white;
+        width: 100%;
+        max-width: 500px;
+        padding: 40px;
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .registration {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        background: var(--primary-color);
+        color: white;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    h1 {
+        color: var(--text-color);
+        margin: 30px 0 25px;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    label {
+        color: var(--text-color);
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    input {
+        padding: 15px;
+        border: 2px solid #e9ecef;
+        border-radius: var(--border-radius);
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+
+        input:focus {
+            border-color: var(--accent-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(72, 149, 239, 0.2);
+        }
+
+    button {
+        background: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 16px;
+        border-radius: var(--border-radius);
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 10px;
+    }
+
+        button:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+    .login-link {
+        text-align: center;
+        margin-top: 25px;
+        color: #6c757d;
+    }
+
+        .login-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 5px;
+            transition: all 0.2s ease;
+        }
+
+            .login-link a:hover {
+                text-decoration: underline;
+                color: var(--secondary-color);
+            }
+</style>
+
+<div class="registration">Добро пожаловать!</div>
+
+<h1>Регистрация</h1>
+
+<form asp-action="Register" method="post">
+    @Html.AntiForgeryToken()
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" required />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Surname"></label>
+        <input asp-for="Surname" class="form-control" required />
+        <span asp-validation-for="Surname" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DateOfBirth"></label>
+        <input asp-for="DateOfBirth" type="date" class="form-control" required />
+        <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" type="email" class="form-control" required />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PhoneNumber"></label>
+        <input asp-for="PhoneNumber" class="form-control" />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" class="form-control" required />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RoleId">Роль</label>
+        <select asp-for="RoleId" class="form-control" asp-items="ViewBag.Roles"></select>
+        <span asp-validation-for="RoleId" class="text-danger"></span>
+    </div>
+    <a asp-controller="Home" asp-action="Index">
+        <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+    </a>
+    
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+
