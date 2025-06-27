@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dream House")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3758911e2bac5a237da426e1ff204cc417a96ed2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b365fb5ef0cf5ef6b1d018eb4e97d639630b4e16")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dream House")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dream House")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

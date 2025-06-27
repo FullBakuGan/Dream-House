@@ -118,22 +118,30 @@
             }
 </style>
 
-<div class="form-group">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required />
-</div>
-<div class="form-group">
-    <label for="phoneNumber">Номер телефона</label>
-    <input type="number" id="phoneNumber" name="phoneNumber" required />
-</div>
-<div class="form-group">
-    <label for="password">Пароль</label>
-    <input type="password" id="password" name="password" required />
-</div>
-<a asp-controller="Home" asp-action="Index">
-    <button type="submit">Войти</button>
-    </a>
+<div class="login-container">
 
-<div class="login-link">
-    Нет аккаунта?<a asp-controller="Account" asp-action="Register">Зарегестрироваться</a>
+    <form asp-action="Login" method="post">
+        @Html.AntiForgeryToken()
+
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Password"></label>
+            <input asp-for="Password" type="password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Войти</button>
+    </form>
+
+    <div class="login-link">
+        Нет аккаунта? <a asp-controller="Account" asp-action="Register">Зарегистрироваться</a>
+    </div>
 </div>
+

@@ -11,7 +11,7 @@ namespace Dream_House.Services
     public interface IAuthService
     {
         Task<bool> RegisterUserAsync(RegisterViewModel model);
-        Task<(bool success, string firstName, string lastName)> AuthenticateUserAsync(string email, string password);
+        Task<(bool success, string firstName, string lastName, int roleId)> AuthenticateUserAsync(string email, string password);
     }
 
     public class AuthService : IAuthService
@@ -56,7 +56,7 @@ namespace Dream_House.Services
             }
         }
 
-        public async Task<(bool success, string firstName, string lastName)> AuthenticateUserAsync(string email, string password)
+        public async Task<(bool success, string firstName, string lastName, int roleId)> AuthenticateUserAsync(string email, string password)
         {
             try
             {
@@ -64,16 +64,16 @@ namespace Dream_House.Services
                     .FirstOrDefaultAsync(u => u.Email == email);
 
                 if (user == null)
-                    return (false, null, null);
+                    return (false, null, null, 1);
 
                 return user.HashPassword == HashPassword(password)
-                    ? (true, user.Name, user.Surname)
-                    : (false, null, null);
+                    ? (true, user.Name, user.Surname, user.RoleId)
+                    : (false, null, null, 1);
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Ошибка аутентификации: {ex.Message}");
-                return (false, null, null);
+                return (false, null, null, 1);
             }
         }
 

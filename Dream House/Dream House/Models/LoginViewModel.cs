@@ -11,5 +11,7 @@ namespace Dream_House.Models
         [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; }
+
+        public int RoleId {  get; set; }
     }
 }

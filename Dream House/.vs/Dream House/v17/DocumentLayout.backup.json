@@ -3,20 +3,68 @@
   "WorkspaceRootPath": "D:\\hackaton_directory\\Dream House\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\views\\developer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\views\\developer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\controllers\\developercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\controllers\\developercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\controllers\\realtorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\controllers\\realtorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\views\\realtor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\views\\realtor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\views\\account\\welcome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\views\\account\\welcome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|d:\\hackaton_directory\\dream house\\dream house\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{891FAED5-0CB5-4610-8414-0239752B1422}|Dream House\\Dream House.csproj|solutionrelative:dream house\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
@@ -36,10 +84,11 @@
               "RelativeDocumentMoniker": "Dream House\\Models\\LoginViewModel.cs",
               "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Models\\LoginViewModel.cs",
               "RelativeToolTip": "Dream House\\Models\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T18:04:39.881Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -49,41 +98,197 @@
               "RelativeDocumentMoniker": "Dream House\\Controllers\\AccountController.cs",
               "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Dream House\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwEMAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAuwD4AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T17:49:18.433Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\hackaton_directory\\Dream House\\Dream House\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Dream House\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Dream House\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-27T13:02:13.685Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\hackaton_directory\\Dream House\\Dream House\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Dream House\\Services\\AuthService.cs",
+              "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Services\\AuthService.cs",
+              "RelativeToolTip": "Dream House\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAqwA0AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T16:33:10.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\hackaton_directory\\Dream House\\Dream House\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Dream House\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Dream House\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAgwJMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T16:29:12.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\hackaton_directory\\Dream House\\Dream House\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Dream House\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Dream House\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAgwMAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T16:12:21.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\hackaton_directory\\Dream House\\Dream House\\Views\\Developer\\Index.cshtml",
+              "RelativeDocumentMoniker": "Dream House\\Views\\Developer\\Index.cshtml",
+              "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Views\\Developer\\Index.cshtml",
+              "RelativeToolTip": "Dream House\\Views\\Developer\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T16:06:07.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DeveloperController.cs",
+              "DocumentMoniker": "D:\\hackaton_directory\\Dream House\\Dream House\\Controllers\\DeveloperController.cs",
+              "RelativeDocumentMoniker": "Dream House\\Controllers\\DeveloperController.cs",
+              "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Controllers\\DeveloperController.cs",
+              "RelativeToolTip": "Dream House\\Controllers\\DeveloperController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T16:05:56.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\hackaton_directory\\Dream House\\Dream House\\Program.cs",
               "RelativeDocumentMoniker": "Dream House\\Program.cs",
-              "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Program.cs",
-              "RelativeToolTip": "Dream House\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAA3AAAAAAAAAA==",
+              "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Program.cs*",
+              "RelativeToolTip": "Dream House\\Program.cs*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-27T12:57:51.671Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\hackaton_directory\\Dream House\\Dream House\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Dream House\\Models\\RegisterViewModel.cs",
+              "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "Dream House\\Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T16:37:15.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\hackaton_directory\\Dream House\\Dream House\\Views\\Realtor\\Index.cshtml",
+              "RelativeDocumentMoniker": "Dream House\\Views\\Realtor\\Index.cshtml",
+              "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Views\\Realtor\\Index.cshtml",
+              "RelativeToolTip": "Dream House\\Views\\Realtor\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T16:04:32.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RealtorController.cs",
+              "DocumentMoniker": "D:\\hackaton_directory\\Dream House\\Dream House\\Controllers\\RealtorController.cs",
+              "RelativeDocumentMoniker": "Dream House\\Controllers\\RealtorController.cs",
+              "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Controllers\\RealtorController.cs",
+              "RelativeToolTip": "Dream House\\Controllers\\RealtorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T16:04:10.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\hackaton_directory\\Dream House\\Dream House\\Views\\Client\\Index.cshtml",
+              "RelativeDocumentMoniker": "Dream House\\Views\\Client\\Index.cshtml",
+              "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Views\\Client\\Index.cshtml",
+              "RelativeToolTip": "Dream House\\Views\\Client\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T15:58:21.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "D:\\hackaton_directory\\Dream House\\Dream House\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "Dream House\\Controllers\\ClientController.cs",
+              "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "Dream House\\Controllers\\ClientController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T15:57:37.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Welcome.cshtml",
+              "DocumentMoniker": "D:\\hackaton_directory\\Dream House\\Dream House\\Views\\Account\\Welcome.cshtml",
+              "RelativeDocumentMoniker": "Dream House\\Views\\Account\\Welcome.cshtml",
+              "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Views\\Account\\Welcome.cshtml",
+              "RelativeToolTip": "Dream House\\Views\\Account\\Welcome.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T15:52:26.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\hackaton_directory\\Dream House\\Dream House\\appsettings.json",
+              "RelativeDocumentMoniker": "Dream House\\appsettings.json",
+              "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\appsettings.json",
+              "RelativeToolTip": "Dream House\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-27T15:51:20.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\hackaton_directory\\Dream House\\Dream House\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Dream House\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\hackaton_directory\\Dream House\\Dream House\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Dream House\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T13:02:13.685Z",
+              "EditorCaption": ""
             }
           ]
         }
