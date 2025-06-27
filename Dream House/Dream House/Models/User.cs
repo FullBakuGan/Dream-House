@@ -1,4 +1,5 @@
-﻿using System;
+﻿using hackaton_asp_project.Models;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -24,7 +25,8 @@ namespace Dream_House.Models
 
         [Required]
         public int RoleId { get; set; }
-        public Role Role { get; set; }
+        public virtual ICollection<favorite> favorites { get; set; } = new List<favorite>();
+
 
         [Column(TypeName = "timestamp without time zone")]
         public DateTime RegistrationDate { get; set; } = DateTime.Now;
