@@ -3010,23 +3010,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nikos\\.nuget\\packages\\": {},
+    "C:\\Users\\monas\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\hackaton_directory\\Dream House\\Dream House\\Dream House.csproj",
+      "projectUniqueName": "D:\\hackaton_project1\\Dream-House\\Dream House\\Dream House\\Dream House.csproj",
       "projectName": "Dream House",
-      "projectPath": "D:\\hackaton_directory\\Dream House\\Dream House\\Dream House.csproj",
-      "packagesPath": "C:\\Users\\nikos\\.nuget\\packages\\",
-      "outputPath": "D:\\hackaton_directory\\Dream House\\Dream House\\obj\\",
+      "projectPath": "D:\\hackaton_project1\\Dream-House\\Dream House\\Dream House\\Dream House.csproj",
+      "packagesPath": "C:\\Users\\monas\\.nuget\\packages\\",
+      "outputPath": "D:\\hackaton_project1\\Dream-House\\Dream House\\Dream House\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\nikos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\monas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3047,13 +3047,7 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -3103,7 +3097,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
